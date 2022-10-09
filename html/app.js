@@ -11,10 +11,10 @@ const load = Vue.createApp({
       CarouselSubText2: 'Photo captured by: ihyajb#9723',
       CarouselText3: 'All server-specific adjustments can be made in the config.lua files throughout the build.',
       CarouselSubText3: 'Photo captured by: FLAPZ[INACTIV]#9925',
-      CarouselText4: 'For additional support please join our community at discord.gg/qbcore',
+      CarouselText4: 'For additional support please join our community at discord.gg/qbcorer',
       CarouselSubText4: 'Photo captured by: Robinerino#1312',
 
-      DownloadTitle: 'Downloading QBCore Server',
+      DownloadTitle: 'Downloading QBCore:RE Server',
       DownloadDesc: "Hold tight while we begin downloading all the resources/assets required to play on QBCore Server. \n\nAfter download has been finished successfully, you'll be placed into the server and this screen will disappear. Please don't leave or turn off your PC. ",
 
       SettingsTitle: 'Settings',
