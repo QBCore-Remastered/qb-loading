@@ -1,5 +1,9 @@
 /* Customize style for dialog menus and carousels here */
 
+:root {
+    --brand-color: #f1e542;
+}
+
 .brand-logo {
     width: 14% !important;
 }
@@ -13,7 +17,7 @@
 }
 
 .text-togglecolor {
-    color: #f1e542 !important;
+    color: var(--brand-color) !important;
 }
 
 .loadingbar {
@@ -35,7 +39,7 @@
 .thingy {
     width: auto;
     height: 1.5vh;
-    background: #f1e542;
+    background: var(--brand-color);
     z-index: 9999;
 }
 
