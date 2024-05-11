@@ -77,98 +77,15 @@
                         </q-carousel>
                         <q-space></q-space>
                         <q-carousel animated style="width: 28vw;" infinite :autoplay="thirdap" v-model="thirdslide" transition-next="fade" transition-prev="fade" control-color="white" arrows padding class="bg-transparent text-white">
-                            <q-carousel-slide name="5" class="column no-wrap flex-center">
+                            <q-carousel-slide :name="index" class="column no-wrap flex-center" v-for="(page, index) in keybinds">
                                 <div style="width: 30vw; white-space: pre-wrap;" class="text-weight-regular text-center text-body1">
                                     {{ KeybindTitle }}
                                 </div>
                                 <div class="q-mt-md text-center">
-                                    <q-btn :ripple="false" flat stack><q-avatar square size="33px"><img style="width: 60px!important;" src="assets/keybinds/TAB.svg"></q-avatar>
+                                    <q-btn :ripple="false" flat stack v-for="keybind in page">
+                                        <div class="keybind-key">{{ keybind.key }}</div>
                                         <div style="font-size: 10px;">
-                                            {{ Keybind1 }}
-                                        </div>
-                                    </q-btn>
-                                    <q-btn :ripple="false" flat stack><q-avatar square size="33px"><img src="assets/keybinds/Tilde.svg"></q-avatar>
-                                        <div style="font-size: 10px;">
-                                            {{ Keybind2 }}
-                                        </div>
-                                    </q-btn>
-                                    <q-btn :ripple="false" flat stack><q-avatar square size="33px"><img src="assets/keybinds/M.svg"></q-avatar>
-                                        <div style="font-size: 10px;">
-                                            {{ Keybind3 }}
-                                        </div>
-                                    </q-btn>
-                                    <q-btn :ripple="false" flat stack><q-avatar square size="33px"><img src="assets/keybinds/B.svg"></q-avatar>
-                                        <div style="font-size: 10px;">
-                                            {{ Keybind4 }}
-                                        </div>
-                                    </q-btn>
-                                    <br>
-                                    <q-btn :ripple="false" flat stack><q-avatar square size="33px"><img style="width: 60px!important;" src="assets/keybinds/LALT.svg"></q-avatar>
-                                        <div style="font-size: 10px;">
-                                            {{ Keybind5 }}
-                                        </div>
-                                    </q-btn>
-                                    <q-btn :ripple="false" flat stack><q-avatar square size="33px"><img src="assets/keybinds/F1.svg"></q-avatar>
-                                        <div style="font-size: 10px;">
-                                            {{ Keybind6 }}
-                                        </div>
-                                    </q-btn>
-                                    <q-btn :ripple="false" flat stack><q-avatar square size="33px"><img src="assets/keybinds/I.svg"></q-avatar>
-                                        <div style="font-size: 10px;">
-                                            {{ Keybind7 }}
-                                        </div>
-                                    </q-btn>
-                                    <q-btn :ripple="false" flat stack><q-avatar square size="33px"><img style="width: 60px!important;" src="assets/keybinds/LALT.svg"></q-avatar>
-                                        <div style="font-size: 10px;">
-                                            {{ Keybind8 }}
-                                        </div>
-                                    </q-btn>
-                                </div>
-                            </q-carousel-slide>
-                            <q-carousel-slide name="6" class="column no-wrap flex-center">
-                                <div style="width: 30vw; white-space: pre-wrap;" class="text-weight-regular text-center text-body1">
-                                    {{ KeybindTitle }}
-                                </div>
-                                <div class="q-mt-md text-center">
-                                    <q-btn :ripple="false" flat stack><q-avatar square size="33px"><img src="assets/keybinds/L.svg"></q-avatar>
-                                        <div style="font-size: 10px;">
-                                            {{ Keybind10 }}
-                                        </div>
-                                    </q-btn>
-                                    <q-btn :ripple="false" flat stack><q-avatar square size="33px"><img src="assets/keybinds/G.svg"></q-avatar>
-                                        <div style="font-size: 10px;">
-                                            {{ Keybind11 }}
-                                        </div>
-                                    </q-btn>
-                                    <q-btn :ripple="false" flat stack><q-avatar square size="33px"><img src="assets/keybinds/B.svg"></q-avatar>
-                                        <div style="font-size: 10px;">
-                                            {{ Keybind12 }}
-                                        </div>
-                                    </q-btn>
-                                    <q-btn :ripple="false" flat stack><q-avatar square size="33px"><img style="width: 60px!important;" src="assets/keybinds/HOME.svg"></q-avatar>
-                                        <div style="font-size: 10px;">
-                                            {{ Keybind9 }}
-                                        </div>
-                                    </q-btn>
-                                    <br>
-                                        <q-btn :ripple="false" flat stack><q-avatar square size="33px"><img style="width: 60px!important;" src="assets/keybinds/Z.svg"></q-avatar>
-                                        <div style="font-size: 10px;">
-                                            {{ Keybind13 }}
-                                        </div>
-                                    </q-btn>
-                                    <q-btn :ripple="false" flat stack><q-avatar square size="33px"><img style="width: 60px!important;" src="assets/keybinds/X.svg"></q-avatar>
-                                        <div style="font-size: 10px;">
-                                            {{ Keybind14 }}
-                                        </div>
-                                    </q-btn>
-                                    <q-btn :ripple="false" flat stack><q-avatar square size="33px"><img style="width: 60px!important;" src="assets/keybinds/NUM.svg"></q-avatar>
-                                        <div style="font-size: 10px;">
-                                            {{ Keybind15 }}
-                                        </div>
-                                    </q-btn>
-                                    <q-btn active-class="remove-active" :ripple="false" flat stack><q-avatar square size="33px"><img style="width: 60px!important;" src="assets/keybinds/Y.svg"></q-avatar>
-                                        <div style="font-size: 10px;">
-                                            {{ Keybind16 }}
+                                            {{ keybind.label }}
                                         </div>
                                     </q-btn>
                                 </div>

@@ -24,3 +24,16 @@ span.q-btn__content.text-center.col.items-center.q-anchor--skip.justify-center.c
 .q-carousel .q-carousel--padding, .q-carousel__slide { padding-top: 0px!important; }
 .scroll { overflow: hidden!important; }
 .q-focus-helper { opacity: 0!important; }
+
+.keybind-key {
+    border: 2px solid currentColor;
+    height: 33px;
+    min-width: 33px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    border-radius: 4px;
+}
