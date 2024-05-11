@@ -52,7 +52,7 @@
                         <q-carousel animated style="width: 28vw;" infinite v-model="keybindsCarousel" :autoplay="keybindsCarouselAutoplay" transition-next="fade" transition-prev="fade" control-color="white" arrows padding class="bg-transparent text-white">
                             <q-carousel-slide :name="index" class="column no-wrap flex-center" v-for="(page, index) in keybinds">
                                 <div style="width: 30vw; white-space: pre-wrap;" class="text-weight-regular text-center text-body1">
-                                    {{ KeybindTitle }}
+                                    {{ keybindTitle }}
                                 </div>
                                 <div class="q-mt-md text-center">
                                     <q-btn :ripple="false" flat stack v-for="keybind in page">
