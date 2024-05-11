@@ -28,15 +28,15 @@ const load = Vue.createApp({
                 },
             ],
 
-            DownloadTitle: "Downloading Qbox Server",
-            DownloadDesc: "Hold tight while we begin downloading all the resources/assets required to play on QBox Server. \n\nAfter download has been finished successfully, you'll be placed into the server and this screen will disappear. Please don't leave or turn off your PC. ",
+            downloadCardTitle: "Downloading Qbox Server",
+            downloadCardDescription: "Hold tight while we begin downloading all the resources/assets required to play on QBox Server. \n\nAfter download has been finished successfully, you'll be placed into the server and this screen will disappear. Please don't leave or turn off your PC. ",
 
-            SettingsTitle: "Settings",
-            AudioTrackDesc1: "When disabled the current audio-track playing will be stopped.",
-            AutoPlayDesc2: "When disabled carousel images will stop cycling and remain on the last shown.",
-            PlayVideoDesc3: "When disabled video will stop playing and remain paused.",
+            settingsCardTitle: "Settings",
+            audioTrackDescription: "When disabled the current audio-track playing will be stopped.",
+            playAudioDescription: "When disabled carousel images will stop cycling and remain on the last shown.",
+            playVideoDescription: "When disabled video will stop playing and remain paused.",
 
-            KeybindTitle: "Default Keybinds",
+            keybindTitle: "Default Keybinds",
 
             keybinds: [
                 [
@@ -61,14 +61,13 @@ const load = Vue.createApp({
                 ],
             ],
 
-            firstap: ref(true),
-            secondap: ref(true),
-            thirdap: ref(true),
-            firstslide: ref(1),
-            secondslide: ref(1),
-            thirdslide: ref(1),
-            audioplay: ref(true),
-            playvideo: ref(true),
+            slidesImageCarousel: ref(0),
+            slidesTextCarousel: ref(0),
+            slidesCarouselAutoplay: ref(true),
+            keybindsCarousel: ref(0),
+            keybindsCarouselAutoplay: ref(true),
+            playAudio: ref(true),
+            playVideo: ref(true),
             download: ref(true),
             settings: ref(false),
         };
@@ -100,7 +99,7 @@ $(document).ready(function () {
 var audio = document.getElementById("audio");
 audio.volume = 0.05;
 
-function audiotoggle() {
+function toggleAudio() {
     var audio = document.getElementById("audio");
     if (audio.paused) {
         audio.play();
@@ -109,7 +108,7 @@ function audiotoggle() {
     }
 }
 
-function videotoggle() {
+function toggleVideo() {
     var video = document.getElementById("video");
     if (video.paused) {
         video.play();
