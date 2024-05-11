@@ -5,14 +5,28 @@ const { ref } = Vue
 const load = Vue.createApp({
   setup () {
     return {
-      CarouselText1: 'You can add/remove items, vehicles, jobs & gangs through the shared folder.',
-      CarouselSubText1: 'Photo captured by: Markyoo#8068',
-      CarouselText2: 'Find any issues or want to suggest feature requests? Head to our github and create an issue!',
-      CarouselSubText2: 'Photo captured by: ihyajb#9723',
-      CarouselText3: 'All server-specific adjustments can be made in the config.lua files throughout the build.',
-      CarouselSubText3: 'Photo captured by: FLAPZ[INACTIV]#9925',
-      CarouselText4: 'For additional support please join our community at discord.gg/qbox',
-      CarouselSubText4: 'Photo captured by: Robinerino#1312',
+      slides: [
+        {
+            text: "You can add/remove items, vehicles, jobs & gangs through the shared folder.",
+            subText: "Photo captured by: Markyoo#8068",
+            image: "assets/images/1.png",
+        },
+        {
+            text: "Find any issues or want to suggest feature requests? Head to our github and create an issue!",
+            subText: "Photo captured by: ihyajb#9723",
+            image: "assets/images/2.png",
+        },
+        {
+            text: "All server-specific adjustments can be made in the config.lua files throughout the build.",
+            subText: "Photo captured by: FLAPZ[INACTIV]#9925",
+            image: "assets/images/3.png",
+        },
+        {
+            text: "For additional support please join our community at discord.gg/qbox",
+            subText: "Photo captured by: Robinerino#1312",
+            image: "assets/images/4.png",
+        },
+      ],
 
       DownloadTitle: 'Downloading Qbox Server',
       DownloadDesc: "Hold tight while we begin downloading all the resources/assets required to play on QBox Server. \n\nAfter download has been finished successfully, you'll be placed into the server and this screen will disappear. Please don't leave or turn off your PC. ",
@@ -51,7 +65,7 @@ const load = Vue.createApp({
       secondap: ref(true),
       thirdap: ref(true),
       firstslide: ref(1),
-      secondslide: ref('1'),
+      secondslide: ref(1),
       thirdslide: ref(1),
       audioplay: ref(true),
       playvideo: ref(true),
