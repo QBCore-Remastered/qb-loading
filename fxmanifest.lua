@@ -1,11 +1,10 @@
 fx_version 'cerulean'
 game 'gta5'
 
-description 'QBX_Loading'
+name 'qbx_loading'
+description 'Loading screen for Qbox'
 repository 'https://github.com/Qbox-project/qbx_loading'
-version '1.0'
-
-client_script 'client/client.lua'
+version '1.0.0'
 
 files {
     'html/assets/**',
@@ -15,6 +14,7 @@ files {
 loadscreen {
     'html/index.html'
 }
+
 loadscreen_cursor 'yes'
 loadscreen_manual_shutdown 'yes'
 
