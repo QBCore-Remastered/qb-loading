@@ -1,13 +1,4 @@
-## Preview
-<div align="middle">
-    <img width="auto" src="https://user-images.githubusercontent.com/91661118/154784761-d9e1a3de-3f34-47dc-afc2-0aecb6d17042.png"/>
-</div>
-
-<br>
-
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/91661118/154891228-1fffbd8c-8b07-4175-bd25-fbfbd7e3ed38.gif)
-
-<br>
+![qbx_loading](https://github.com/Qbox-project/qbx_loading/assets/3579092/7bc40278-b3d8-443d-aa67-c2d3fc5d0ae9)
 
 ## Key Features
 <div align="middle">
