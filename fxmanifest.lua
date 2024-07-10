@@ -4,7 +4,7 @@ game 'gta5'
 name 'qbx_loading'
 description 'Loading screen for Qbox'
 repository 'https://github.com/Qbox-project/qbx_loading'
-version '1.0.0'
+version '0.1.0'
 
 files {
     'html/assets/**',
