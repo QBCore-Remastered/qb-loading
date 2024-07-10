@@ -1,8 +1,8 @@
-![qbx_loading](https://github.com/Qbox-project/qbx_loading/assets/3579092/7bc40278-b3d8-443d-aa67-c2d3fc5d0ae9)
+![qbx_loading](.github/images/qbx_loading.png)
 
 ## Key Features
 <div align="middle">
-    <img width="auto" src="https://user-images.githubusercontent.com/91661118/154636617-a2ad4c09-4b60-4438-832a-ed1c505b52ea.png"/>
+    <img width="auto" src=".github/images/key_features.png"/>
 </div>
 
 * #### Bridge does not show while loading into server
@@ -18,20 +18,25 @@
 
 ## Change to Carousel or Video
 <div align="middle">
-    <img width="auto" src="https://user-images.githubusercontent.com/91661118/154641230-17b3da6f-e731-472c-8447-d280d2d28c82.png"/>
+    <img width="auto" src=".github/images/carousel.png"/>
 </div>
 
-* #### Simply locate the HTML file found in: "html/index.html" exactly as shown underneath 
+* #### Simply locate the HTML file found in: "html/index.html" exactly as shown underneath
 
-![msedge_JyZqs9qYOF](https://user-images.githubusercontent.com/91661118/154891153-7b8a9e0b-5d89-460f-af4b-409e5105c229.gif)
+<div align="middle">
+    <img width="auto" src=".github/images/change_images.gif"/>
+</div>
 
 <br>
 
 ## Change Language
 <div align="middle">
-    <img width="auto" src="https://user-images.githubusercontent.com/91661118/154641827-fd6d3ced-9d9c-43fb-9b20-440d7ff562b0.png"/>
+    <img width="auto" src=".github/images/change_language.png"/>
 </div>
 
 * #### Simply locate the Javascript file found in: "html/app.js" exactly as shown underneath
-![msedge_KLht2xu4CO](https://user-images.githubusercontent.com/91661118/154890941-5bc9db8f-6f15-4cb0-a7b3-1aa60a7d0824.gif)
+
+<div align="middle">
+    <img width="auto" src=".github/images/change_language.gif"/>
+</div>
 
